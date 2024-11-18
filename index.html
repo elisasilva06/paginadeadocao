@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <a href="#" class="abas">Inicio</a>
+            <a href="#" class="abas">Sobre</a>
+            <a href="#" class="abas">Missão</a>
+            <a href="#" class="abas">Doação</a>
+            <a href="#" class="abas">Projetos</a>
+            <a href="#" class="abas">Adoção</a>
+            <a href="#" class="abas">Eventos</a>
+           
+            <button class="login">Entrar</button>
+        </div>
+    </header>
+    <section class="busca">
+        <div class="box">
+            <div class="especie">
+                <div class="select-container">
+                    <label for="animals">Espécie:</label>
+                    <select id="animals" name="animals">
+                        <option value="Todas as espécies">Todas as espécies</option>
+                        <option value="cachorro">Cachorro</option>
+                        <option value="gato">Gato</option>
+                        <option value="passaro">Pássaro</option>
+                        <option value="peixe">Peixe</option>
+                    </select>
+                </div> 
+            </div>
+            <div class="sexo">
+                <div class="select-container">
+                    <label for="animals">Sexo:</label>
+                    <select id="animals" name="animals">
+                        <option value="Todos os sexos">Todos os sexos</option>
+                        <option value="Macho">Macho</option>
+                        <option value="Fêmea">Fêmea</option>
+                    </select>
+                </div>
+            </div>
+            <div class="porte">
+                <div class="select-container">
+                    <label for="animals">Porte:</label>
+                    <select id="animals" name="animals">
+                        <option value="Todos os portes">Todos os portes</option>
+                        <option value="pequeno">pequeno</option>
+                        <option value="medio">médio</option>
+                        <option value="grande">grande</option>
+                    </select>
+                </div>
+            </div>
+            <button class="buscar">Buscar</button>
+        </div>
+    </section>
+    <section class="animais">
+        <div class="animal-card">
+            <img src="https://static.wikia.nocookie.net/the-bangtan-boys/images/5/52/Bam_Instagram_January_1%2C_2022_%281%29.jpg/revision/latest/scale-to-width-down/250?cb=20220104112156" alt="bam">
+            <div class="nomes">
+                <button class="btnome" onclick="openModal('info-bam')">Bam</button>
+            </div>
+        </div>
+        <div class="modal" id="info-bam">
+            <div class="modal-content">
+                <p>BAM</p>
+                         
+              <button class="back-button" onclick="closeModal('info-bam')">Voltar</button>
+            </div>
+          </div>
+
+  
+
+
+        <div class="animal-card">
+            <img src="https://images.amigonaosecompra.com.br/unsafe/460x440/94fcff96-20c5-4786-9de3-c8eeaa99a40c/01ed785b-8a30-41b1-bdf7-2c6cc733cb38/01ed785b-8a30-41b1-bdf7-2c6cc733cb38.jpg?v=63898829338" alt="liz">
+            <div class="nomes">
+                <button class="btnome" onclick="openModal('info-liz')">Liz</button>
+            </div>
+        </div>
+        <div class="modal" id="info-liz">
+            <div class="modal-content">
+                <p>LIZ</p>
+                         
+              <button class="back-button" onclick="closeModal('info-liz')">Voltar</button>
+            </div>
+          </div>
+        
+        <div class="animal-card">
+            <img src="https://images.amigonaosecompra.com.br/unsafe/460x440/94fcff96-20c5-4786-9de3-c8eeaa99a40c/178c91fd-02d0-4596-ae31-9c97c7fc73af/178c91fd-02d0-4596-ae31-9c97c7fc73af.jpg?v=63898835680" alt="Bob">
+            <div class="nomes">
+                <button class="btnome" onclick="openModal('info-bob')">Bob</button>
+            </div>
+        </div>
+        <div class="modal" id="info-bob">
+            <div class="modal-content">
+                <p>bob</p>
+                         
+              <button class="back-button" onclick="closeModal('info-bob')">Voltar</button>
+            </div>
+          </div>
+
+        <div class="animal-card">
+            <img src="https://s3.amazonaws.com/petz-cdm-stg/66300758-7bcc-4073-8363-932afc9a4de9.jpeg" alt="tomas">
+            <div class="nomes">
+                <button class="btnome">Tomas</button>
+            </div>
+        </div>
+        <div class="animal-card">
+            <img src="data:image/jpeg;base64,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" alt="yeotan">
+            <div class="nomes">
+                <button class="btnome">Yeotan</button>
+            </div>
+        </div>
+        <div class="animal-card">
+            <img src="https://s3.amazonaws.com/petz-cdm-stg/bf6a8c84-3575-465a-abb1-321629314350.jpeg" alt="Mario">
+            <div class="nomes">
+                <button class="btnome">Mario</button>
+            </div>
+        </div>
+        <div class="animal-card">
+            <img src="https://s3.amazonaws.com/petz-cdm-stg/8df96dd3-238f-4c08-8890-587814bdaa09.jpeg" alt="Atila">
+            <div class="nomes">
+                <button class="btnome">Atila</button>
+            </div>
+        </div>
+        <div class="animal-card">
+            <img src="https://images.amigonaosecompra.com.br/unsafe/460x440/eec145e7-b9ed-4e53-9ad8-2fcfdb6787d5/0eed8842-4278-4ccc-abb8-204317cc207a/0eed8842-4278-4ccc-abb8-204317cc207a.jpg?v=63898851616" alt="Napoleao">
+            <div class="nomes">
+                <button class="btnome">Napoleão</button>
+            </div>
+        </div>
+        <div class="animal-card">
+            <img src="https://images.amigonaosecompra.com.br/unsafe/460x440/86f45627-25db-49a8-8119-7bd68511e3f3/7c22fefe-9d8d-4c1f-b5c0-181810ee2ede/7c22fefe-9d8d-4c1f-b5c0-181810ee2ede.jpg?v=63898853213" alt="Nina">
+            <div class="nomes">
+                <button class="btnome">Nina</button>
+            </div>
+        </div>
+        <div class="animal-card">
+            <img src="https://images.amigonaosecompra.com.br/unsafe/460x440/86f45627-25db-49a8-8119-7bd68511e3f3/97e6ebe5-660f-47f8-bc4a-ad8b0941cfcc/97e6ebe5-660f-47f8-bc4a-ad8b0941cfcc.jpg?v=63898853138" alt="Ipanema">
+            <div class="nomes">
+                <button class="btnome">Ipanema</button>
+            </div>
+        </div>
+        <div class="animal-card">
+            <img src="https://images.amigonaosecompra.com.br/unsafe/460x440/09596998-b6a1-4ae3-81f6-f23d2bfa0537/a3c4dd09-d836-4732-b989-8ec21a4198a4/a3c4dd09-d836-4732-b989-8ec21a4198a4.jpg?v=63898898364" alt="Betty">
+            <div class="nomes">
+                <button class="btnome">Betty</button>
+            </div>
+        </div>
+        <div class="animal-card">
+            <img src="https://images.amigonaosecompra.com.br/unsafe/460x440/ef49c081-043a-4299-8719-24e88cdd19ec/9508b5b1-276f-4a1e-b780-638a777e5bee/9508b5b1-276f-4a1e-b780-638a777e5bee.jpg?v=63898912658" alt="Toddy">
+            <div class="nomes">
+                <button class="btnome">Toddy</button>
+            </div>
+        </div>
+        <div class="animal-card">
+            <img src="https://s3.amazonaws.com/petz-cdm-stg/7a69b811-45e0-4f21-b6c9-f587fd8e05c2.jpeg" alt="Angela">
+            <div class="nomes">
+                <button class="btnome">Angela</button>
+            </div>
+        </div>
+        <div class="animal-card">
+            <img src="https://images.amigonaosecompra.com.br/unsafe/460x440/09596998-b6a1-4ae3-81f6-f23d2bfa0537/dc305bc9-4903-41c4-b21d-bfd47b5a90e1/dc305bc9-4903-41c4-b21d-bfd47b5a90e1.jpg?v=63898898314" alt="Leclerc">
+            <div class="nomes">
+                <button class="btnome">Leclerc</button>
+            </div>
+        </div>
+        <div class="animal-card">
+            <img src="" alt="">
+            <div class="nomes">
+                <button class="btnome"></button>
+            </div>
+        </div>
+        
+        <!-- Bloco do Animal -->
+  <div class="animal-block" onclick="openModal('info-leao')">
+    <div class="animal-card">
+        <img src="https://s3.amazonaws.com/petz-cdm-stg/c4dbd84f-edea-42a3-bc3b-1a1dd5d3869c.jpeg" alt="Bacon">
+        <div class="nomes">
+            <button class="btnome">Bacon</button>
+        </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal" id="info-leao">
+    <div class="modal-content">
+        <p>oi</p>
+                 
+      <button class="back-button" onclick="closeModal('info-leao')">Voltar</button>
+    </div>
+  </div>
+
+
+
+
+  <script src="script.js"></script>
+
+  
+
+</body>
+</html>           
